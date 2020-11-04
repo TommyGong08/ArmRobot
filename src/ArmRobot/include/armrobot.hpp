@@ -3,12 +3,14 @@
 
 #include <ros/ros.h>
 #include <sensor_msgs/Image.h>
-
+#include <vector>
 #include "qrcode.hpp"
 #include "colordetect.hpp"
 #include "roboticarm.hpp"
 #include "move.hpp"
 #include "std_msgs/String.h"
+#include "std_msgs/Int8.h"
+#include "geometry_msgs/Pose2D.h"
 
 namespace ns_armrobot {
 
@@ -32,10 +34,20 @@ class ArmRobot {
   void run();
 
   void goto_QRcode();
+  void scan_QRcode();
+  void goto_Material();
+  void detect_Material();
 
   int mission_;
   bool state_;
-  std::string commamd_;
+  int color_flag_; //0 = none; 1 = got red; 2 = got red and green; 3 = got rgb, let's sort them.
+  geometry_msgs::Pose2D red_pos_;
+  geometry_msgs::Pose2D green_pos_;
+  geometry_msgs::Pose2D blue_pos_;
+  std::vector<int> color_sequence_; 
+
+  std_msgs::Int8 color_detect_;
+  std_msgs::String commamd_;
   sensor_msgs::ImageConstPtr& current_image_;
   // ... current_serial_message_;
 
@@ -50,10 +62,13 @@ class ArmRobot {
   ros::NodeHandle nodeHandle_;
   ros::Subscriber CameraSubscriber_;
   ros::Subscriber RosSerialSubscriber_;
+  ros::Subscriber ColorPosSubscriber_;
   ros::Publisher RosSerialPublisher_;
+  ros::Publisher ColorDetectPublisher_;
 
   void CameraCallback(const ... &cones);
   void RosSerialCallback(...);
+  void ColorPosCallback(const geometry_msgs::Pose2D& msg);
 
   int node_rate_;
 
