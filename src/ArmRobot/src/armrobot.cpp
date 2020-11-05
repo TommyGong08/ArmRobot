@@ -25,15 +25,16 @@ void ArmRobot::subscribeToTopics() {
         nodeHandle_.subscribe("/usb_cam/image_raw", 1, &ArmRobot::CameraCallback, this);
     ColorSubscriber_ = 
         nodeHandle_.subscribe("/current_color_pos", 1, &ArmRobot::ColorPosCallback, this);
+    QRcodeMsgSubsriber_ = 
+        nodeHandle_.subscribe("/decode_data", 1, &ArmRobot::QRcodeMsgCallback, this);
     // RosSerialSubscriber_ = 
-
-  
 }
 
-void ArmRobot::publishToTopics() {
+void ArmRobot::publishToTopics(){
   ROS_INFO("publish to topics");
   templateStatePublisher_ = nodeHandle_.advertise<fsd_common_msgs::ConeDetections>(template_state_topic_name_, 1);
   ColorDetectPublisher_ = nodeHandle_.advertise<std_msgs::Int8>("/color_detect", 1);
+  QRcodeDetecPublisher_ = nodeHandle_.advertise<std_msgs::Int8>("/QRcode_detect", 1);
 }
 
 void ArmRobot::run() {
@@ -79,11 +80,16 @@ void ArmRobot::RosSerialCallback(const ...& msg) {
 }
 
 void ArmRobot::ColorPosCallback(const geometry_msgs::Pose2D& msg) {
-  switch(msg.theta) {
+  switch(msg.theta){
     case 1: red_pos_.x = msg.x; red_pos_.y = msg.y; break;
     case 2: green_pos_.x = msg.x; green_pos_.y = msg.y; break;
     case 3: blue_pos_.x = msg.x; blue_pos_.y = msg.y; break;
     default: ROS_INFO("color callback error!"); break;
   }
 }
+
+void ArmRobot::QRcodeMsgCallback(const std_msgs::string& msg){
+    QRcodeMsg_ = msg;
+  }
+
 }
