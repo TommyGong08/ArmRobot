@@ -4,13 +4,16 @@
 #include <ros/ros.h>
 #include <sensor_msgs/Image.h>
 #include <vector>
-#include "qrcode.hpp"
-#include "colordetect.hpp"
-#include "roboticarm.hpp"
-#include "move.hpp"
+#include <cv_bridge/cv_bridge.h>
+#include <image_transport/image_transport.h>
 #include "std_msgs/String.h"
-#include "std_msgs/Int8.h"
-#include "geometry_msgs/Pose2D.h"
+#include <std_msgs/Int8.h>
+#include <geometry_msgs/Pose2D.h>
+#include <chrono>
+#include <sensor_msgs/image_encodings.h>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/opencv.hpp>
 
 namespace ns_armrobot {
 
@@ -22,10 +25,7 @@ class ArmRobot {
   
   // Getters
   int getNodeRate() const;
-  std::string getCommand() const;
-
-  // Setters
-  void setConeDetections(fsd_common_msgs::ConeDetections cones);
+  std_msgs::String getCommand() const;
   
   // Methods
   void subscribeToTopics();
@@ -47,22 +47,17 @@ class ArmRobot {
   std::vector<int> color_sequence_; 
 
   std_msgs::Int8 color_detect_;
-  std_msgs::string QRcodeMsg_;
+  std_msgs::String QRcodeMsg_;
   std_msgs::String commamd_;
-  sensor_msgs::ImageConstPtr& current_image_;
   // ... current_serial_message_;
-
-  BaseControl base_controller_;
-  QRCodeScan scanner_;
-  ColorDetect detector_;
-  RoboticArm arm_;
 
   bool occupied_flag_; // 1:busy 0:free
 
  private:
 
   ros::NodeHandle nodeHandle_;
-  ros::Subscriber CameraSubscriber_;
+  image_transport::ImageTransport nodeHandle2_;
+  image_transport::Subscriber CameraSubscriber_;
   ros::Subscriber RosSerialSubscriber_;
   ros::Subscriber ColorPosSubscriber_;
   ros::Subscriber QRcodeMsgSubsriber_;
@@ -71,14 +66,12 @@ class ArmRobot {
   ros::Publisher ColorDetectPublisher_;
   ros::Publisher QRcodeDetecPublisher_;
 
-  void CameraCallback(const ... &cones);
-  void RosSerialCallback(...);
+  void CameraCallback(const sensor_msgs::ImageConstPtr& msg);
+  //void RosSerialCallback(...);
   void ColorPosCallback(const geometry_msgs::Pose2D& msg);
-  void QRcodeMsgCallback(const std_msgs::string& msg);
+  void QRcodeMsgCallback(const std_msgs::String& msg);
 
   int node_rate_;
-
-  fsd_common_msgs::ConeDetections cone_current;
 
 };
 }

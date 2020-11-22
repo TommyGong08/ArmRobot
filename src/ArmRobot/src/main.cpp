@@ -1,5 +1,7 @@
 #include <ros/ros.h>
-#include "statemachine.hpp"
+#include "armrobot.hpp"
+
+typedef ns_armrobot::ArmRobot ArmRobot;
 
 int main(int argc, char **argv) {
   ros::init(argc, argv, "ArmRobot");

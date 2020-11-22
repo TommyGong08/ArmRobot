@@ -1,0 +1,8 @@
+prefix=/home/ghl/Desktop/ArmRobot/devel
+
+Name: ArmRobot
+Description: Description of ArmRobot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
