@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ghl/Desktop/ArmRobot/src
+CMAKE_SOURCE_DIR = /home/ghl/ArmRobot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ghl/Desktop/ArmRobot/build
+CMAKE_BINARY_DIR = /home/ghl/ArmRobot/build
 
 # Utility rule file for sensor_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build: sensor_msgs_gen
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
-	cd /home/ghl/Desktop/ArmRobot/build/ArmRobot && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/ghl/ArmRobot/build/ArmRobot && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend:
-	cd /home/ghl/Desktop/ArmRobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ghl/Desktop/ArmRobot/src /home/ghl/Desktop/ArmRobot/src/ArmRobot /home/ghl/Desktop/ArmRobot/build /home/ghl/Desktop/ArmRobot/build/ArmRobot /home/ghl/Desktop/ArmRobot/build/ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ghl/ArmRobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ghl/ArmRobot/src /home/ghl/ArmRobot/src/ArmRobot /home/ghl/ArmRobot/build /home/ghl/ArmRobot/build/ArmRobot /home/ghl/ArmRobot/build/ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
 

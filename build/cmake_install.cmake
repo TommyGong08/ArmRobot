@@ -1,8 +1,8 @@
-# Install script for directory: /home/ghl/Desktop/ArmRobot/src
+# Install script for directory: /home/ghl/ArmRobot/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ghl/Desktop/ArmRobot/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ghl/ArmRobot/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,89 +44,89 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ghl/Desktop/ArmRobot/install/_setup_util.py")
+   "/home/ghl/ArmRobot/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ghl/Desktop/ArmRobot/install" TYPE PROGRAM FILES "/home/ghl/Desktop/ArmRobot/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/ghl/ArmRobot/install" TYPE PROGRAM FILES "/home/ghl/ArmRobot/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ghl/Desktop/ArmRobot/install/env.sh")
+   "/home/ghl/ArmRobot/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ghl/Desktop/ArmRobot/install" TYPE PROGRAM FILES "/home/ghl/Desktop/ArmRobot/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/ghl/ArmRobot/install" TYPE PROGRAM FILES "/home/ghl/ArmRobot/build/catkin_generated/installspace/env.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ghl/Desktop/ArmRobot/install/setup.bash;/home/ghl/Desktop/ArmRobot/install/local_setup.bash")
+   "/home/ghl/ArmRobot/install/setup.bash;/home/ghl/ArmRobot/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ghl/Desktop/ArmRobot/install" TYPE FILE FILES
-    "/home/ghl/Desktop/ArmRobot/build/catkin_generated/installspace/setup.bash"
-    "/home/ghl/Desktop/ArmRobot/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/ghl/ArmRobot/install" TYPE FILE FILES
+    "/home/ghl/ArmRobot/build/catkin_generated/installspace/setup.bash"
+    "/home/ghl/ArmRobot/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ghl/Desktop/ArmRobot/install/setup.sh;/home/ghl/Desktop/ArmRobot/install/local_setup.sh")
+   "/home/ghl/ArmRobot/install/setup.sh;/home/ghl/ArmRobot/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ghl/Desktop/ArmRobot/install" TYPE FILE FILES
-    "/home/ghl/Desktop/ArmRobot/build/catkin_generated/installspace/setup.sh"
-    "/home/ghl/Desktop/ArmRobot/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/ghl/ArmRobot/install" TYPE FILE FILES
+    "/home/ghl/ArmRobot/build/catkin_generated/installspace/setup.sh"
+    "/home/ghl/ArmRobot/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ghl/Desktop/ArmRobot/install/setup.zsh;/home/ghl/Desktop/ArmRobot/install/local_setup.zsh")
+   "/home/ghl/ArmRobot/install/setup.zsh;/home/ghl/ArmRobot/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ghl/Desktop/ArmRobot/install" TYPE FILE FILES
-    "/home/ghl/Desktop/ArmRobot/build/catkin_generated/installspace/setup.zsh"
-    "/home/ghl/Desktop/ArmRobot/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/ghl/ArmRobot/install" TYPE FILE FILES
+    "/home/ghl/ArmRobot/build/catkin_generated/installspace/setup.zsh"
+    "/home/ghl/ArmRobot/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ghl/Desktop/ArmRobot/install/.rosinstall")
+   "/home/ghl/ArmRobot/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ghl/Desktop/ArmRobot/install" TYPE FILE FILES "/home/ghl/Desktop/ArmRobot/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/ghl/ArmRobot/install" TYPE FILE FILES "/home/ghl/ArmRobot/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ghl/Desktop/ArmRobot/build/gtest/cmake_install.cmake")
-  include("/home/ghl/Desktop/ArmRobot/build/ArmRobot/cmake_install.cmake")
+  include("/home/ghl/ArmRobot/build/gtest/cmake_install.cmake")
+  include("/home/ghl/ArmRobot/build/ArmRobot/cmake_install.cmake")
 
 endif()
 
@@ -138,5 +138,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ghl/Desktop/ArmRobot/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ghl/ArmRobot/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

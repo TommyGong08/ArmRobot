@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ghl/Desktop/ArmRobot/src
+CMAKE_SOURCE_DIR = /home/ghl/ArmRobot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ghl/Desktop/ArmRobot/build
+CMAKE_BINARY_DIR = /home/ghl/ArmRobot/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ghl/Desktop/ArmRobot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles /home/ghl/Desktop/ArmRobot/build/ArmRobot/CMakeFiles/progress.marks
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	cd /home/ghl/ArmRobot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles /home/ghl/ArmRobot/build/ArmRobot/CMakeFiles/progress.marks
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/clean
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/preinstall
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/preinstall
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ghl/Desktop/ArmRobot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ghl/ArmRobot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ rosgraph_msgs_generate_messages_nodejs: ArmRobot/CMakeFiles/rosgraph_msgs_genera
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ geometry_msgs_generate_messages_nodejs: ArmRobot/CMakeFiles/geometry_msgs_genera
 
 # fast build rule for target.
 geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -207,12 +207,27 @@ std_msgs_generate_messages_py: ArmRobot/CMakeFiles/std_msgs_generate_messages_py
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+ArmRobot/CMakeFiles/ArmRobot_node.dir/rule:
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/ArmRobot_node.dir/rule
+.PHONY : ArmRobot/CMakeFiles/ArmRobot_node.dir/rule
+
+# Convenience name for target.
+ArmRobot_node: ArmRobot/CMakeFiles/ArmRobot_node.dir/rule
+
+.PHONY : ArmRobot_node
+
+# fast build rule for target.
+ArmRobot_node/fast:
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/ArmRobot_node.dir/build.make ArmRobot/CMakeFiles/ArmRobot_node.dir/build
+.PHONY : ArmRobot_node/fast
+
+# Convenience name for target.
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -222,12 +237,12 @@ geometry_msgs_generate_messages_eus: ArmRobot/CMakeFiles/geometry_msgs_generate_
 
 # fast build rule for target.
 geometry_msgs_generate_messages_eus/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -237,12 +252,12 @@ roscpp_generate_messages_cpp: ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.d
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -252,12 +267,12 @@ geometry_msgs_generate_messages_py: ArmRobot/CMakeFiles/geometry_msgs_generate_m
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -267,12 +282,12 @@ sensor_msgs_generate_messages_cpp: ArmRobot/CMakeFiles/sensor_msgs_generate_mess
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -282,12 +297,12 @@ sensor_msgs_generate_messages_lisp: ArmRobot/CMakeFiles/sensor_msgs_generate_mes
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -297,12 +312,12 @@ sensor_msgs_generate_messages_py: ArmRobot/CMakeFiles/sensor_msgs_generate_messa
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -312,12 +327,12 @@ std_msgs_generate_messages_cpp: ArmRobot/CMakeFiles/std_msgs_generate_messages_c
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -327,12 +342,12 @@ rosgraph_msgs_generate_messages_cpp: ArmRobot/CMakeFiles/rosgraph_msgs_generate_
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -342,12 +357,12 @@ sensor_msgs_generate_messages_eus: ArmRobot/CMakeFiles/sensor_msgs_generate_mess
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -357,12 +372,12 @@ geometry_msgs_generate_messages_cpp: ArmRobot/CMakeFiles/geometry_msgs_generate_
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -372,12 +387,12 @@ sensor_msgs_generate_messages_nodejs: ArmRobot/CMakeFiles/sensor_msgs_generate_m
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -387,27 +402,12 @@ roscpp_generate_messages_py: ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
-ArmRobot/CMakeFiles/ArmRobot.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/ArmRobot.dir/rule
-.PHONY : ArmRobot/CMakeFiles/ArmRobot.dir/rule
-
-# Convenience name for target.
-ArmRobot: ArmRobot/CMakeFiles/ArmRobot.dir/rule
-
-.PHONY : ArmRobot
-
-# fast build rule for target.
-ArmRobot/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/ArmRobot.dir/build.make ArmRobot/CMakeFiles/ArmRobot.dir/build
-.PHONY : ArmRobot/fast
-
-# Convenience name for target.
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -417,12 +417,12 @@ rosgraph_msgs_generate_messages_eus: ArmRobot/CMakeFiles/rosgraph_msgs_generate_
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -432,12 +432,12 @@ geometry_msgs_generate_messages_lisp: ArmRobot/CMakeFiles/geometry_msgs_generate
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -447,12 +447,12 @@ std_msgs_generate_messages_lisp: ArmRobot/CMakeFiles/std_msgs_generate_messages_
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -462,12 +462,12 @@ std_msgs_generate_messages_nodejs: ArmRobot/CMakeFiles/std_msgs_generate_message
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -477,12 +477,12 @@ std_msgs_generate_messages_eus: ArmRobot/CMakeFiles/std_msgs_generate_messages_e
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -492,12 +492,12 @@ roscpp_generate_messages_lisp: ArmRobot/CMakeFiles/roscpp_generate_messages_lisp
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -507,12 +507,12 @@ roscpp_generate_messages_eus: ArmRobot/CMakeFiles/roscpp_generate_messages_eus.d
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -522,12 +522,12 @@ rosgraph_msgs_generate_messages_py: ArmRobot/CMakeFiles/rosgraph_msgs_generate_m
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -537,12 +537,12 @@ rosgraph_msgs_generate_messages_lisp: ArmRobot/CMakeFiles/rosgraph_msgs_generate
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -552,7 +552,7 @@ roscpp_generate_messages_nodejs: ArmRobot/CMakeFiles/roscpp_generate_messages_no
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 src/armrobot.o: src/armrobot.cpp.o
@@ -561,7 +561,7 @@ src/armrobot.o: src/armrobot.cpp.o
 
 # target to build an object file
 src/armrobot.cpp.o:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/ArmRobot.dir/build.make ArmRobot/CMakeFiles/ArmRobot.dir/src/armrobot.cpp.o
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/ArmRobot_node.dir/build.make ArmRobot/CMakeFiles/ArmRobot_node.dir/src/armrobot.cpp.o
 .PHONY : src/armrobot.cpp.o
 
 src/armrobot.i: src/armrobot.cpp.i
@@ -570,7 +570,7 @@ src/armrobot.i: src/armrobot.cpp.i
 
 # target to preprocess a source file
 src/armrobot.cpp.i:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/ArmRobot.dir/build.make ArmRobot/CMakeFiles/ArmRobot.dir/src/armrobot.cpp.i
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/ArmRobot_node.dir/build.make ArmRobot/CMakeFiles/ArmRobot_node.dir/src/armrobot.cpp.i
 .PHONY : src/armrobot.cpp.i
 
 src/armrobot.s: src/armrobot.cpp.s
@@ -579,7 +579,7 @@ src/armrobot.s: src/armrobot.cpp.s
 
 # target to generate assembly for a file
 src/armrobot.cpp.s:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/ArmRobot.dir/build.make ArmRobot/CMakeFiles/ArmRobot.dir/src/armrobot.cpp.s
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/ArmRobot_node.dir/build.make ArmRobot/CMakeFiles/ArmRobot_node.dir/src/armrobot.cpp.s
 .PHONY : src/armrobot.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -588,7 +588,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/ArmRobot.dir/build.make ArmRobot/CMakeFiles/ArmRobot.dir/src/main.cpp.o
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/ArmRobot_node.dir/build.make ArmRobot/CMakeFiles/ArmRobot_node.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -597,7 +597,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/ArmRobot.dir/build.make ArmRobot/CMakeFiles/ArmRobot.dir/src/main.cpp.i
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/ArmRobot_node.dir/build.make ArmRobot/CMakeFiles/ArmRobot_node.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -606,7 +606,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /home/ghl/Desktop/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/ArmRobot.dir/build.make ArmRobot/CMakeFiles/ArmRobot.dir/src/main.cpp.s
+	cd /home/ghl/ArmRobot/build && $(MAKE) -f ArmRobot/CMakeFiles/ArmRobot_node.dir/build.make ArmRobot/CMakeFiles/ArmRobot_node.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -624,6 +624,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... ArmRobot_node"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
@@ -637,7 +638,6 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_py"
-	@echo "... ArmRobot"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_lisp"
@@ -665,6 +665,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ghl/Desktop/ArmRobot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ghl/ArmRobot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ghl/Desktop/ArmRobot/src
+CMAKE_SOURCE_DIR = /home/ghl/ArmRobot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ghl/Desktop/ArmRobot/build
+CMAKE_BINARY_DIR = /home/ghl/ArmRobot/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,9 +135,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles /home/ghl/Desktop/ArmRobot/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles /home/ghl/ArmRobot/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -322,6 +322,19 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named ArmRobot_node
+
+# Build rule for target.
+ArmRobot_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot_node
+.PHONY : ArmRobot_node
+
+# fast build rule for target.
+ArmRobot_node/fast:
+	$(MAKE) -f ArmRobot/CMakeFiles/ArmRobot_node.dir/build.make ArmRobot/CMakeFiles/ArmRobot_node.dir/build
+.PHONY : ArmRobot_node/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -478,19 +491,6 @@ roscpp_generate_messages_py/fast:
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named ArmRobot
-
-# Build rule for target.
-ArmRobot: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot
-.PHONY : ArmRobot
-
-# fast build rule for target.
-ArmRobot/fast:
-	$(MAKE) -f ArmRobot/CMakeFiles/ArmRobot.dir/build.make ArmRobot/CMakeFiles/ArmRobot.dir/build
-.PHONY : ArmRobot/fast
-
-#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -645,6 +645,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... ArmRobot_node"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
@@ -657,7 +658,6 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_py"
-	@echo "... ArmRobot"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_lisp"

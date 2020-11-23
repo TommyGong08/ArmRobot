@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ghl/Desktop/ArmRobot/src
+CMAKE_SOURCE_DIR = /home/ghl/ArmRobot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ghl/Desktop/ArmRobot/build
+CMAKE_BINARY_DIR = /home/ghl/ArmRobot/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build: rosgraph_m
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/ghl/Desktop/ArmRobot/build/ArmRobot && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/ghl/ArmRobot/build/ArmRobot && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/ghl/Desktop/ArmRobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ghl/Desktop/ArmRobot/src /home/ghl/Desktop/ArmRobot/src/ArmRobot /home/ghl/Desktop/ArmRobot/build /home/ghl/Desktop/ArmRobot/build/ArmRobot /home/ghl/Desktop/ArmRobot/build/ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ghl/ArmRobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ghl/ArmRobot/src /home/ghl/ArmRobot/src/ArmRobot /home/ghl/ArmRobot/build /home/ghl/ArmRobot/build/ArmRobot /home/ghl/ArmRobot/build/ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
 

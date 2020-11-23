@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ghl/Desktop/ArmRobot/src
+CMAKE_SOURCE_DIR = /home/ghl/ArmRobot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ghl/Desktop/ArmRobot/build
+CMAKE_BINARY_DIR = /home/ghl/ArmRobot/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/clean_test_results.dir
@@ -66,14 +66,14 @@ CMAKE_BINARY_DIR = /home/ghl/Desktop/ArmRobot/build
 CMakeFiles/clean_test_results.dir/all:
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/depend
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target clean_test_results"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target clean_test_results"
 .PHONY : CMakeFiles/clean_test_results.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clean_test_results.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clean_test_results.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : CMakeFiles/clean_test_results.dir/rule
 
 # Convenience name for target.
@@ -98,14 +98,14 @@ clean: CMakeFiles/clean_test_results.dir/clean
 CMakeFiles/run_tests.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
 
 # Convenience name for target.
@@ -130,14 +130,14 @@ clean: CMakeFiles/run_tests.dir/clean
 CMakeFiles/download_extra_data.dir/all:
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/depend
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target download_extra_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target download_extra_data"
 .PHONY : CMakeFiles/download_extra_data.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/download_extra_data.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/download_extra_data.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : CMakeFiles/download_extra_data.dir/rule
 
 # Convenience name for target.
@@ -162,14 +162,14 @@ clean: CMakeFiles/download_extra_data.dir/clean
 CMakeFiles/tests.dir/all:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
@@ -194,14 +194,14 @@ clean: CMakeFiles/tests.dir/clean
 CMakeFiles/doxygen.dir/all:
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/depend
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target doxygen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target doxygen"
 .PHONY : CMakeFiles/doxygen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doxygen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/doxygen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : CMakeFiles/doxygen.dir/rule
 
 # Convenience name for target.
@@ -246,14 +246,14 @@ gtest/preinstall: gtest/gtest/preinstall
 gtest/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num=4,5,6 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num=4,5,6 "Built target gmock"
 .PHONY : gtest/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -278,14 +278,14 @@ clean: gtest/CMakeFiles/gmock.dir/clean
 gtest/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num=7,8,9,10 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num=7,8,9,10 "Built target gmock_main"
 .PHONY : gtest/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -329,14 +329,14 @@ gtest/gtest/preinstall:
 gtest/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num=11,12 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num=11,12 "Built target gtest"
 .PHONY : gtest/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/gtest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : gtest/gtest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -361,14 +361,14 @@ clean: gtest/gtest/CMakeFiles/gtest.dir/clean
 gtest/gtest/CMakeFiles/gtest_main.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num=13,14 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num=13,14 "Built target gtest_main"
 .PHONY : gtest/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/gtest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : gtest/gtest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -390,7 +390,7 @@ clean: gtest/gtest/CMakeFiles/gtest_main.dir/clean
 # Directory level rules for directory ArmRobot
 
 # Convenience name for "all" pass in the directory.
-ArmRobot/all: ArmRobot/CMakeFiles/ArmRobot.dir/all
+ArmRobot/all: ArmRobot/CMakeFiles/ArmRobot_node.dir/all
 
 .PHONY : ArmRobot/all
 
@@ -398,6 +398,7 @@ ArmRobot/all: ArmRobot/CMakeFiles/ArmRobot.dir/all
 ArmRobot/clean: ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 ArmRobot/clean: ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 ArmRobot/clean: ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+ArmRobot/clean: ArmRobot/CMakeFiles/ArmRobot_node.dir/clean
 ArmRobot/clean: ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 ArmRobot/clean: ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 ArmRobot/clean: ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
@@ -410,7 +411,6 @@ ArmRobot/clean: ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 ArmRobot/clean: ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 ArmRobot/clean: ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
 ArmRobot/clean: ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/clean
-ArmRobot/clean: ArmRobot/CMakeFiles/ArmRobot.dir/clean
 ArmRobot/clean: ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 ArmRobot/clean: ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 ArmRobot/clean: ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
@@ -436,14 +436,14 @@ ArmRobot/preinstall:
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -468,14 +468,14 @@ clean: ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -500,14 +500,14 @@ clean: ArmRobot/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -526,20 +526,57 @@ clean: ArmRobot/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target ArmRobot/CMakeFiles/ArmRobot_node.dir
+
+# All Build rule for target.
+ArmRobot/CMakeFiles/ArmRobot_node.dir/all:
+	$(MAKE) -f ArmRobot/CMakeFiles/ArmRobot_node.dir/build.make ArmRobot/CMakeFiles/ArmRobot_node.dir/depend
+	$(MAKE) -f ArmRobot/CMakeFiles/ArmRobot_node.dir/build.make ArmRobot/CMakeFiles/ArmRobot_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num=1,2,3 "Built target ArmRobot_node"
+.PHONY : ArmRobot/CMakeFiles/ArmRobot_node.dir/all
+
+# Include target in all.
+all: ArmRobot/CMakeFiles/ArmRobot_node.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ArmRobot/CMakeFiles/ArmRobot_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/ArmRobot_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
+.PHONY : ArmRobot/CMakeFiles/ArmRobot_node.dir/rule
+
+# Convenience name for target.
+ArmRobot_node: ArmRobot/CMakeFiles/ArmRobot_node.dir/rule
+
+.PHONY : ArmRobot_node
+
+# clean rule for target.
+ArmRobot/CMakeFiles/ArmRobot_node.dir/clean:
+	$(MAKE) -f ArmRobot/CMakeFiles/ArmRobot_node.dir/build.make ArmRobot/CMakeFiles/ArmRobot_node.dir/clean
+.PHONY : ArmRobot/CMakeFiles/ArmRobot_node.dir/clean
+
+# clean rule for target.
+clean: ArmRobot/CMakeFiles/ArmRobot_node.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -564,14 +601,14 @@ clean: ArmRobot/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -596,14 +633,14 @@ clean: ArmRobot/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -628,14 +665,14 @@ clean: ArmRobot/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -660,14 +697,14 @@ clean: ArmRobot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -692,14 +729,14 @@ clean: ArmRobot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -724,14 +761,14 @@ clean: ArmRobot/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -756,14 +793,14 @@ clean: ArmRobot/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -788,14 +825,14 @@ clean: ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -820,14 +857,14 @@ clean: ArmRobot/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -852,14 +889,14 @@ clean: ArmRobot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -884,14 +921,14 @@ clean: ArmRobot/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
 ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -910,57 +947,20 @@ clean: ArmRobot/CMakeFiles/roscpp_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target ArmRobot/CMakeFiles/ArmRobot.dir
-
-# All Build rule for target.
-ArmRobot/CMakeFiles/ArmRobot.dir/all:
-	$(MAKE) -f ArmRobot/CMakeFiles/ArmRobot.dir/build.make ArmRobot/CMakeFiles/ArmRobot.dir/depend
-	$(MAKE) -f ArmRobot/CMakeFiles/ArmRobot.dir/build.make ArmRobot/CMakeFiles/ArmRobot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num=1,2,3 "Built target ArmRobot"
-.PHONY : ArmRobot/CMakeFiles/ArmRobot.dir/all
-
-# Include target in all.
-all: ArmRobot/CMakeFiles/ArmRobot.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ArmRobot/CMakeFiles/ArmRobot.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/ArmRobot.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
-.PHONY : ArmRobot/CMakeFiles/ArmRobot.dir/rule
-
-# Convenience name for target.
-ArmRobot: ArmRobot/CMakeFiles/ArmRobot.dir/rule
-
-.PHONY : ArmRobot
-
-# clean rule for target.
-ArmRobot/CMakeFiles/ArmRobot.dir/clean:
-	$(MAKE) -f ArmRobot/CMakeFiles/ArmRobot.dir/build.make ArmRobot/CMakeFiles/ArmRobot.dir/clean
-.PHONY : ArmRobot/CMakeFiles/ArmRobot.dir/clean
-
-# clean rule for target.
-clean: ArmRobot/CMakeFiles/ArmRobot.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -985,14 +985,14 @@ clean: ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1017,14 +1017,14 @@ clean: ArmRobot/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1049,14 +1049,14 @@ clean: ArmRobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1081,14 +1081,14 @@ clean: ArmRobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1113,14 +1113,14 @@ clean: ArmRobot/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1145,14 +1145,14 @@ clean: ArmRobot/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1177,14 +1177,14 @@ clean: ArmRobot/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1209,14 +1209,14 @@ clean: ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1241,14 +1241,14 @@ clean: ArmRobot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
 	$(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
 	$(MAKE) -f ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/Desktop/ArmRobot/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ghl/ArmRobot/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/Desktop/ArmRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ghl/ArmRobot/build/CMakeFiles 0
 .PHONY : ArmRobot/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.

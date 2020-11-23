@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ghl/Desktop/ArmRobot/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ghl/ArmRobot/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ghl/Desktop/ArmRobot/build/gtest/gtest/cmake_install.cmake")
+  include("/home/ghl/ArmRobot/build/gtest/gtest/cmake_install.cmake")
 
 endif()
 

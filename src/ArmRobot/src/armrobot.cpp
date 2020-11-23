@@ -65,9 +65,9 @@ void ArmRobot::goto_QRcode() {
     // occupied_flag_ = 1;
 }
 
-void ArmRobot::sendMsg() {
-  RosSerialPublisher_.publish(getCommand());
-}
+// void ArmRobot::sendMsg() {
+//   RosSerialPublisher_.publish(getCommand());
+// }
 
 void ArmRobot::CameraCallback(const sensor_msgs::ImageConstPtr& msg) {
   cv_bridge::CvImagePtr cv_ptr;

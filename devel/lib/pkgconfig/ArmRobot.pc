@@ -1,4 +1,4 @@
-prefix=/home/ghl/Desktop/ArmRobot/devel
+prefix=/home/ghl/ArmRobot/devel
 
 Name: ArmRobot
 Description: Description of ArmRobot

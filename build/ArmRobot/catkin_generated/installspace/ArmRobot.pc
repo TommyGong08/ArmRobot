@@ -1,4 +1,4 @@
-prefix=/home/ghl/Desktop/ArmRobot/install
+prefix=/home/ghl/ArmRobot/install
 
 Name: ArmRobot
 Description: Description of ArmRobot

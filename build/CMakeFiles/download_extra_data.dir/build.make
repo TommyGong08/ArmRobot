@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ghl/Desktop/ArmRobot/src
+CMAKE_SOURCE_DIR = /home/ghl/ArmRobot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ghl/Desktop/ArmRobot/build
+CMAKE_BINARY_DIR = /home/ghl/ArmRobot/build
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/ghl/Desktop/ArmRobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ghl/Desktop/ArmRobot/src /home/ghl/Desktop/ArmRobot/src /home/ghl/Desktop/ArmRobot/build /home/ghl/Desktop/ArmRobot/build /home/ghl/Desktop/ArmRobot/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ghl/ArmRobot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ghl/ArmRobot/src /home/ghl/ArmRobot/src /home/ghl/ArmRobot/build /home/ghl/ArmRobot/build /home/ghl/ArmRobot/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 
