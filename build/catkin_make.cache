@@ -1,2 +1,0 @@
-ArmRobot
--DCATKIN_DEVEL_PREFIX=/home/ghl/ArmRobot/devel -DCMAKE_INSTALL_PREFIX=/home/ghl/ArmRobot/install -G Unix Makefiles
