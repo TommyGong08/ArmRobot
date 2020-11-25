@@ -49,7 +49,7 @@ class ArmRobot {
   std_msgs::Int8 color_detect_;
   std_msgs::String QRcodeMsg_;
   std_msgs::String commamd_;
-  // ... current_serial_message_;
+  std_msgs::String current_serial_message_;
 
   bool occupied_flag_; // 1:busy 0:free
 
@@ -58,16 +58,16 @@ class ArmRobot {
   ros::NodeHandle nodeHandle_;
   image_transport::ImageTransport nodeHandle2_;
   image_transport::Subscriber CameraSubscriber_;
-  ros::Subscriber RosSerialSubscriber_;
+ // ros::Subscriber RosSerialSubscriber_;
   ros::Subscriber ColorPosSubscriber_;
   ros::Subscriber QRcodeMsgSubsriber_;
 
-  ros::Publisher RosSerialPublisher_;
+ // ros::Publisher RosSerialPublisher_;
   ros::Publisher ColorDetectPublisher_;
   ros::Publisher QRcodeDetecPublisher_;
 
   void CameraCallback(const sensor_msgs::ImageConstPtr& msg);
-  //void RosSerialCallback(...);
+  void RosSerialCallback(const std_msgs::String& msg);
   void ColorPosCallback(const geometry_msgs::Pose2D& msg);
   void QRcodeMsgCallback(const std_msgs::String& msg);
 

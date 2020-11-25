@@ -46,6 +46,7 @@ public:
    : it_(nh_){
    image_sub_ = it_.subscribe("/usb_cam/image_raw", 1, &ImageConverter::imageCb, this);
    image_pub_ = it_.advertise("/camera/image_processed", 1);
+
    cv::namedWindow(OPENCV_WINDOW);
  }
 
@@ -99,10 +100,9 @@ public:
     Scalar color = Scalar(rng.uniform(0, 255), rng.uniform(0,255), rng.uniform(0,255));
     drawContours(drawing, contours, i, color, 2, 8, hierarchy, 0, Point());
     }
-
-  cv::namedWindow(Contour_WINDOW);
-  cv::imshow(Contour_WINDOW, drawing);
-  cv::waitKey(3);
+   cv::namedWindow(Contour_WINDOW);
+   cv::imshow(Contour_WINDOW, drawing);
+   cv::waitKey(3);
 */
   cv::inRange(imgHSV, Scalar(iLowH, iLowS, iLowV), Scalar(iHighH, iHighS, iHighV), imgThresholded); //Threshold the image
   //开操作 (去除一些噪点)  如果二值化后图片干扰部分依然很多，增大下面的size

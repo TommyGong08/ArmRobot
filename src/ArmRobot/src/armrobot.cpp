@@ -1,6 +1,9 @@
 #include <ros/ros.h>
 #include "armrobot.hpp"
 #include <chrono>
+#include <serial/serial.h>  //ROS已经内置了的串口包 
+#include <std_msgs/Empty.h>
+serial::Serial ser; //声明串口对象 
 
 
 namespace ns_armrobot {
@@ -10,6 +13,30 @@ ArmRobot::ArmRobot(ros::NodeHandle &nodeHandle) :
     nodeHandle_(nodeHandle), mission_(0), node_rate_(10), occupied_flag_(0),nodeHandle2_(nodeHandle)
     {
     ROS_INFO("Constructing Armrobot");
+    try 
+      { 
+      //设置串口属性，并打开串口
+            ser.setPort("/dev/ttyTHS1"); 
+            ser.setBaudrate(115200); 
+            serial::Timeout to = serial::Timeout::simpleTimeout(1000); 
+            ser.setTimeout(to); 
+            ser.open(); 
+      } 
+      catch (serial::IOException& e) 
+      { 
+            ROS_ERROR_STREAM("Unable to open port "); 
+      }
+      if(ser.isOpen()) 
+      { 
+            ROS_INFO_STREAM("Serial Port initialized"); 
+      }
+      else 
+      { 
+           ROS_ERROR_STREAM("Serial Port can't initialize!");
+      } 
+     std_msgs::String  msg ;
+     msg.data = "A4";    
+     ser.write(msg.data); 
     subscribeToTopics();
     publishToTopics();
 }
@@ -28,7 +55,6 @@ void ArmRobot::subscribeToTopics() {
         nodeHandle_.subscribe("/current_color_pos", 1, &ArmRobot::ColorPosCallback, this);
     QRcodeMsgSubsriber_ = 
         nodeHandle_.subscribe("/decode_data", 1, &ArmRobot::QRcodeMsgCallback, this);
-    // RosSerialSubscriber_ = 
 }
 
 void ArmRobot::publishToTopics(){
@@ -39,11 +65,18 @@ void ArmRobot::publishToTopics(){
 
 void ArmRobot::run() {
   std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
-  //main loop
+  if(ser.available())
+            { 
+                  ROS_INFO_STREAM("Reading from serial port\n"); 
+                  std_msgs::String result; 
+                  result.data = ser.read(ser.available()); 
+                  ROS_INFO_STREAM("Read: " << result.data);
+            } 
 /*
   switch(mission_) {
       case 0: goto_QRcode();
       case 1: scan_QRcode();
+      case 2: goto_material();
   }
 */
   //
@@ -80,11 +113,11 @@ void ArmRobot::CameraCallback(const sensor_msgs::ImageConstPtr& msg) {
    }
 }
 
-/*
-void ArmRobot::RosSerialCallback(const ...& msg) {
+
+void ArmRobot::RosSerialCallback(const std_msgs::String& msg){
   current_serial_message_ = msg;
 }
-*/
+
 
 void ArmRobot::ColorPosCallback(const geometry_msgs::Pose2D& msg) {
   int temp = msg.theta;

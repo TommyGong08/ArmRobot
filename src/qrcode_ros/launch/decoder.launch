@@ -1,8 +1,0 @@
-<launch>
-	<group ns="qrcode_ros" >
-		<param name="sub_img_name" type="str" value="/usb_cam/image_raw" />
-    <param name="decode_ctrl" type="bool" value="True" />
-		<node pkg="qrcode_ros" type="QRcode_decoder.py" name="decoder" output="screen"/>
-	</group>
-	<!-- include file="$(find usb_cam)/launch/usb_cam.launch"/ -->
-</launch>
