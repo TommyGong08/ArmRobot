@@ -5,6 +5,7 @@
 #include <std_msgs/Empty.h>
 #include <map>
 #include <unistd.h>
+#include "goto_area.hpp"
 serial::Serial ser; //声明串口对象 
 
 
@@ -38,9 +39,9 @@ ArmRobot::ArmRobot(ros::NodeHandle &nodeHandle) :
       } 
 
     // init color map
-    map['1'] = 'r';
-    map['2'] = 'b';
-    map['3'] = 'g'; 
+    color_map['r'] = 'e';
+    color_map['g'] = 'e';
+    color_map['b'] = 'e'; 
 
     red_pos_.x = -1;
     red_pos_.y = -1;
@@ -82,54 +83,17 @@ void ArmRobot::run() {
      scan_QRcode();
      goto_material();
      detect_color();
-     grab_material();
+     grab_material('D');
+     goto_raw_process();
+     grab_in_raw_process();
+    goto_SemiProcess();
+
 
   std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
   double time_round = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1).count();
   std::cout << "time cost = " << time_round << ", frequency = " << 1 / time_round << std::endl;
   //sendMsg();
 }
-
-int  ArmRobot::robot_move(string my_msg)
-{
-  //send serial message ,goto QR code
-  int  num=0;
-  std_msgs::String  msg ;
-  msg.data = my_msg; 
-  num = ser.write(msg.data); 
-  if( num < 0 )  ROS_ERROR_STREAM("Can't Send message");
-  else ROS_INFO_STREAM( "Send message sucessfully");
-  int flag = -1;
-  for(int i=0; ; i < 10 ; i++)
-  {
-    sleep(1000);
-    //if buffer has messages ,read messages
-    if(ser.available())
-    { 
-      ROS_INFO_STREAM("Reading from serial port\n"); 
-      std_msgs::String result; 
-      result.data = ser.read(ser.available()); 
-      ROS_INFO_STREAM("Read: " << result.data);
-      flag  = 0 ;
-      break;
-    } 
-  }
-  if(flag == -1)
-  {
-    ROS_ERROR_STREAM("Can't receive any data");
-  } 
-  return flag;
-}
-
-void ArmRobot::goto_QRcode() {
-  //send serial message ,goto QR code
-  int flag = robot_move("A4");
-  if(flag < 0)
-  {
-   //ROS_ERROR_STREAM();
-  }
-
-} 
 
  void  ArmRobot::scan_QRcode()
  {
@@ -143,17 +107,6 @@ void ArmRobot::goto_QRcode() {
     order[2] = QRcode_info[2];
 
  }
-
-void ArmRobot::goto_material()
-{
-  int flag ;
-  flag =  robot_move("A1");
-  if(flag < 0)
-  {
-   //ROS_ERROR_STREAM();
-  }
-  flag = robot_move("C3");
-}
 
 void ArmRobot::detect_color()
 {
@@ -202,12 +155,6 @@ void ArmRobot::detect_color()
       color_map['r'] = 'r'; // red->right
     }
   }
-  
-}
-
-void ArmRobot::grab_material()
-{
-  //grab materail based on order[] && color_map
   
 }
 
