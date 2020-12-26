@@ -40,6 +40,7 @@ class ArmRobot {
   void goto_Material();
   void detect_Material();
 
+  int turn_;
   int mission_;
   bool state_;
   int color_flag_; //0 = none; 1 = got red; 2 = got red and green; 3 = got rgb, let's sort them.

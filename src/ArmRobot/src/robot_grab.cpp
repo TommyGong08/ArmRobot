@@ -2,21 +2,24 @@
 #include<sstream>
 #include<utility>
 #include "robot_grab.hpp"
+#include"goto_area.hpp"
 using namespace ns_armrobot{
 
-void ArmRobot::grab_material(char level)
+
+//mode represent for take or lay ; mode = 1 take ; mode = 2 lay;
+void ArmRobot::grab_material(char mode,char level)
 {
   //grab materail based on order[ ] && color_map
-  if(level == 'D')
+  if(level == 'D') //grab down level
   {
     for(int i = 0; i < 3 ; i++)
     {
       string temp = "";
-      temp = level + map[order[i]]
+      temp = mode + level + map[order[i]]
       robot_move(temp);
     }   
   }
-  else if(level == 'U')
+  else if(level == 'U') //grab up level
   {
     for(int i = 0; i < 3 ; i++)
     {
@@ -39,13 +42,16 @@ void ArmRobot::grab_material(char level)
 
 void ArmRobot::grab_raw_process()
 {
-  grab_material();
-  grab_material();
+    //TODO:  Arm serial protocol need to be settled
+  grab_material(2,'D');
+  grab_material(1,'D');
 }
 
 void ArmRobot::grab_half_process()
 {
-    
+     //TODO:  Arm serial protocol need to be settled
+  grab_material(2,'D');
+  grab_material(1,'D');
 }
 
 }

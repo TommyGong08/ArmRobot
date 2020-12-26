@@ -13,7 +13,7 @@ namespace ns_armrobot {
 
 // Constructor
 ArmRobot::ArmRobot(ros::NodeHandle &nodeHandle) :
-    nodeHandle_(nodeHandle), mission_(0), node_rate_(10), occupied_flag_(0),nodeHandle2_(nodeHandle)
+    nodeHandle_(nodeHandle), mission_(0),turn_(1), node_rate_(10), occupied_flag_(0),nodeHandle2_(nodeHandle)
     {
     ROS_INFO("Constructing Armrobot");
     try 
@@ -81,12 +81,21 @@ void ArmRobot::run() {
 
      goto_QRcode();
      scan_QRcode();
-     goto_material();
+
+     //turn_ = 1 ,the first time, grab down material
+     goto_material(turn_);
      detect_color();
      grab_material('D');
      goto_raw_process();
      grab_in_raw_process();
-    goto_SemiProcess();
+     goto_semi_process();
+
+     goto_material(turn_);
+    // detect_color();
+     grab_material('D');
+     goto_raw_process(turn_);
+     grab_in_raw_process(turn_);
+     goto_semi_process(turn_);
 
 
   std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
@@ -172,7 +181,6 @@ void ArmRobot::CameraCallback(const sensor_msgs::ImageConstPtr& msg) {
 void ArmRobot::RosSerialCallback(const std_msgs::String& msg){
   current_serial_message_ = msg;
 }
-
 
 void ArmRobot::ColorPosCallback(const geometry_msgs::Pose2D& msg) {
   int temp = msg.theta;
