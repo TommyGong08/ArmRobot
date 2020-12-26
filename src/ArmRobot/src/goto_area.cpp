@@ -2,6 +2,7 @@
 #include<sstream>
 #include<utility>
 #include"goto_area.hpp"
+#include"
 
 using namespace ns_armrobot{
 
@@ -80,7 +81,7 @@ void ArmRobot::goto_material(int turn)
  
 }
 
-void ArmRobot::goto_semi_process()
+void ArmRobot::goto_half_process()
 {
   int flag ;
   flag =  robot_move("A1");
@@ -89,6 +90,18 @@ void ArmRobot::goto_semi_process()
    //ROS_ERROR_STREAM();
   }
   flag = robot_move("C3");
+  if(turn_ == 1){
+    
+  }
+}
+void ArmRobot::goto_return()
+{
+  int flag;
+  flag =  robot_move("A1");
+  if(flag < 0)
+  {
+   //ROS_ERROR_STREAM();
+  }
 }
 
 }

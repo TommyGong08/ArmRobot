@@ -88,14 +88,17 @@ void ArmRobot::run() {
      grab_material('D');
      goto_raw_process();
      grab_in_raw_process();
-     goto_semi_process();
+     goto_half_process();
+     grab_half_process();
 
      goto_material(turn_);
     // detect_color();
      grab_material('D');
-     goto_raw_process(turn_);
-     grab_in_raw_process(turn_);
-     goto_semi_process(turn_);
+     goto_raw_process();
+     grab_in_raw_process();
+     goto_half_process();
+     grab_half_process();
+     goto_return();
 
 
   std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
@@ -182,7 +185,7 @@ void ArmRobot::RosSerialCallback(const std_msgs::String& msg){
   current_serial_message_ = msg;
 }
 
-void ArmRobot::ColorPosCallback(const geometry_msgs::Pose2D& msg) {
+void ArmRobot::ColorPosCallback(const geometry_msgs::Pose2D& msg){
   int temp = msg.theta;
   switch(temp){
     case 1: red_pos_.x = msg.x; red_pos_.y = msg.y; break;
@@ -194,6 +197,6 @@ void ArmRobot::ColorPosCallback(const geometry_msgs::Pose2D& msg) {
 
 void ArmRobot::QRcodeMsgCallback(const std_msgs::String& msg){
     QRcodeMsg_ = msg;
-  }
+}
 
 }

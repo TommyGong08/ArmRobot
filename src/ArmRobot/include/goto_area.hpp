@@ -17,9 +17,8 @@
 namespace ns_armrobot{
     void ArmRobot::goto_QRcode();
     void ArmRobot::goto_material();
-    void ArmRobot::goto_SemiProcess();
-    void ArmRobot::  goto_raw_process();
-    void ArmRobot::goto_SemiProcess();
+      void ArmRobot::  goto_raw_process();
+    void ArmRobot::goto_half_process();
 }
 
 
