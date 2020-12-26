@@ -9,6 +9,7 @@
 #include <string>
 #include <math.h>
 #include <nav_msgs/Odometry.h>
+#include <geometry_msgs/Pose2D.h>
 
 #define WIDTH_MIN 0
 #define WIDTH_MAX 640
@@ -19,12 +20,20 @@ static const std::string OPENCV_WINDOW = "Color Detector";
 //static const std::string HSV_WINDOW = "HSV Image";
 static const std::string Contour_WINDOW = "Contoured Image";
 
-int LowH = 0;
-int LowS = 43;
-int LowV = 46;
-int HighH = 10;
-int HighS = 255;
-int HighV = 255;
+// int LowH = 0;
+// int LowS = 43;
+// int LowV = 46;
+// int HighH = 10;
+// int HighS = 255;
+// int HighV = 255;
+
+//color to be detected, default = red
+int iLowS = 43, iHighS = 255, iLowV = 46, iHighV = 255;
+int iLowH = 0;
+int iHighH = 10;//red
+int color_flag = 0; //0 = no mission, 1 = mission red, 2 = mission blue; 3 = mission green
+
+geometry_msgs::Pose2D pos;
 
 bool anomaly = false;
 
@@ -40,12 +49,15 @@ class ImageConverter{
  image_transport::ImageTransport it_;
  image_transport::Subscriber image_sub_;
  image_transport::Publisher image_pub_;
+ image_transport::Publisher color_pos_pub_;
 
 public:
  ImageConverter()
    : it_(nh_){
+   color_det_ = it.subscribe("/color_need_detect", 1, &ImageConverter::colorCb, this);
    image_sub_ = it_.subscribe("/usb_cam/image_raw", 1, &ImageConverter::imageCb, this);
    image_pub_ = it_.advertise("/camera/image_processed", 1);
+   color_pos_pub_ = it_.advertise<geometry_msgs::Pose2D>("/current_color_pos",1);
 
    cv::namedWindow(OPENCV_WINDOW);
  }
@@ -64,10 +76,7 @@ public:
      return;
    }
 
-  int iLowH, iHighH;
-  int iLowS = 43, iHighS = 255, iLowV = 46, iHighV = 255;
-  iLowH = 0;
-  iHighH = 10;//red
+  //previous color define
   Mat imgHSV;
   cv::cvtColor(cv_ptr->image, imgHSV, COLOR_BGR2HSV);//转为HSV
 
@@ -103,7 +112,7 @@ public:
    cv::namedWindow(Contour_WINDOW);
    cv::imshow(Contour_WINDOW, drawing);
    cv::waitKey(3);
-*/
+  */
   cv::inRange(imgHSV, Scalar(iLowH, iLowS, iLowV), Scalar(iHighH, iHighS, iHighV), imgThresholded); //Threshold the image
   //开操作 (去除一些噪点)  如果二值化后图片干扰部分依然很多，增大下面的size
   cv::Mat element = getStructuringElement(MORPH_RECT, Size(20, 20));
@@ -140,6 +149,10 @@ public:
         point_x = pt[i].x;
       }
       cv::Point p = Point(pt[i].x, pt[i].y);//重心坐标
+      
+      pos.theta = color_flag;
+      pos.x = pt[i].x;
+      pos.y = pt[i].y;
       std::cout << pt[i].x << "," << pt[i].y << std::endl;
       cv::circle(cv_ptr->image, p, 5, color, 2, 8, 0);//原图画出重心坐标
       count++;//重心点数或者是连通区域数
@@ -158,7 +171,7 @@ public:
   // imwrite(name, img);
   //int result = (point_x > WIDTH_MIN) && (point_x < WIDTH_MAX) ? color : 0;
   // return result;
-/*
+  /*
   int largest_area = 2000; //Change value to adjust search size
 
   for(int i = 0; i< contours.size(); i++ ){
@@ -176,9 +189,19 @@ public:
       }
     }
   }
-*/
+  */
+   if(pos.theta) color_pos_pub_.publish(pos);
    image_pub_.publish(cv_ptr->toImageMsg());
+}
+
+void colorCb(const char& msg){
+  switch (msg)
+  {
+    case 'r': iLowH = 0; iHighH = 10; color_flag = 1; break; //red
+    case 'b': iLowH = 100; iHighH = 124; color_flag = 2; break; //blue
+    case 'g': iLowH = 35; iHighH = 77; color_flag = 3; break; //green
   }
+}
 };
 
 ros::Subscriber odom_sub_;
@@ -197,13 +220,13 @@ void clbk_asd(const nav_msgs::Odometry::ConstPtr& asd){
 
 int main(int argc, char** argv){
 
- cv::namedWindow("Control");
- cv::createTrackbar("LowerH:", "Control", &LowH, 179, NULL);
- cv::createTrackbar("LowerS:", "Control", &LowS, 255, NULL);
- cv::createTrackbar("LowerV:", "Control", &LowV, 255, NULL);
- cv::createTrackbar("UpperH:", "Control", &HighH, 179, NULL);
- cv::createTrackbar("UpperS:", "Control", &HighS, 255, NULL);
- cv::createTrackbar("UpperV:", "Control", &HighV, 255, NULL);
+//  cv::namedWindow("Control");
+//  cv::createTrackbar("LowerH:", "Control", &LowH, 179, NULL);
+//  cv::createTrackbar("LowerS:", "Control", &LowS, 255, NULL);
+//  cv::createTrackbar("LowerV:", "Control", &LowV, 255, NULL);
+//  cv::createTrackbar("UpperH:", "Control", &HighH, 179, NULL);
+//  cv::createTrackbar("UpperS:", "Control", &HighS, 255, NULL);
+//  cv::createTrackbar("UpperV:", "Control", &HighV, 255, NULL);
  ros::init(argc, argv, "color_detection");
 
  ros::NodeHandle n;

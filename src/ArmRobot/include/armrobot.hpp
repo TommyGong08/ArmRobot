@@ -10,6 +10,8 @@
 #include <std_msgs/Int8.h>
 #include <geometry_msgs/Pose2D.h>
 #include <chrono>
+#include <map>
+#include <string>
 #include <sensor_msgs/image_encodings.h>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
@@ -41,6 +43,9 @@ class ArmRobot {
   int mission_;
   bool state_;
   int color_flag_; //0 = none; 1 = got red; 2 = got red and green; 3 = got rgb, let's sort them.
+  char order[3];    //qrinfo order
+ // record material color location: <'r','m'> meas red materail in the middle
+  map<char,char> color_map; 
   geometry_msgs::Pose2D red_pos_;
   geometry_msgs::Pose2D green_pos_;
   geometry_msgs::Pose2D blue_pos_;
